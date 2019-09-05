@@ -14,9 +14,6 @@ songs = [
 def help 
 
   puts "- I accept the following commands:"
-
-  puts "Please enter a command:"
-
   puts "- help : displays this help message"
   puts "- list : displays a list of songs you can play"
   puts "- play : lets you choose a song to play"
@@ -58,8 +55,10 @@ def exit_jukebox
    puts "Goodbye"
 end 
 
+
+
 def run(songs)
-  help
+  
   go = true
   
   while go == true
