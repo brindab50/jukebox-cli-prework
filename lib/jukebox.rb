@@ -1,17 +1,4 @@
 require "pry"
-=begin def say_hello(name)
-=======
-def say_hello(name)
->>>>>>> c9658330d6d5cf02fbfd85ad2f122f8e77ff345d
-  "Hi #{name}!"
-end
- 
-puts "Enter your name:"
-users_name = gets.strip
- 
-<<<<<<< HEAD
-=end puts say_hello(users_name)
-
 songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
