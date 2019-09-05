@@ -63,7 +63,7 @@ def run(songs)
   go = true
   
   while go == true
-    help
+    
     puts "Please enter a command:"
   
     input = gets.strip
