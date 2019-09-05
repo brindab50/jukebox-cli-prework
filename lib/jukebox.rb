@@ -12,7 +12,7 @@ songs = [
 ]
 
 def help 
-<<<<<<< HEAD
+
   puts "- I accept the following commands:"
 
   puts "Please enter a command:"
@@ -25,7 +25,7 @@ end
 
 def list(songs)
 
-  songs.each_with_index do |song, index|
+    songs.each_with_index do |song, index|
     puts "#{index + 1}. #{song}"  
   end 
 end
