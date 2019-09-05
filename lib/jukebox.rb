@@ -32,30 +32,30 @@ end
 
 def play(songs)
   
-  puts "Please enter a song name or number:"
+    puts "Please enter a song name or number:"
     input = gets.strip
   
   if input.to_i == 0
     if songs.include?(input)
       puts "Playing #{input}"
-    else 
-     puts "Invalid input, please try again"
+     else 
+       puts "Invalid input, please try again"
    end
     
-  else 
+     else 
    
-    if input.to_i > songs.size
+   if input.to_i > songs.size
     
-      puts "Invalid input, please try again"
+       puts "Invalid input, please try again"
       
     else
-      puts "Playing #{songs[input.to_i - 1]}"
+       puts "Playing #{songs[input.to_i - 1]}"
     end 
   end 
 end 
 
 def exit_jukebox 
-  puts "Goodbye"
+   puts "Goodbye"
 end 
 
 def run(songs)
