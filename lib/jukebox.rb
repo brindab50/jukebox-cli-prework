@@ -83,20 +83,20 @@ def run(songs)
   end
   
 
-  help 
-  puts "Please enter a command:"
-  input = gets.strip
-  if input == "help"
-    help
-  elsif input == "exit"
-    exit_jukebox
-  elsif input == "play"
-    play(songs)
-  elsif input == "list"
-    list(songs)
-  else
-    exit_jukebox
-  end
+  # help 
+  # puts "Please enter a command:"
+  # input = gets.strip
+  # if input == "help"
+  #   help
+  # elsif input == "exit"
+  #   exit_jukebox
+  # elsif input == "play"
+  #   play(songs)
+  # elsif input == "list"
+  #   list(songs)
+  # else
+  #   exit_jukebox
+  # end
 
 end 
 
