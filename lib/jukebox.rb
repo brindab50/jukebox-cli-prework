@@ -25,8 +25,11 @@ songs = [
 ]
 
 def help 
+<<<<<<< HEAD
   puts "- I accept the following commands:"
-  #puts "/Please enter a command:/"
+
+  puts "Please enter a command:"
+
   puts "- help : displays this help message"
   puts "- list : displays a list of songs you can play"
   puts "- play : lets you choose a song to play"
@@ -47,7 +50,6 @@ def play(songs)
   
   if input.to_i == 0
     if songs.include?(input)
-     # binding.pry
       puts "Playing #{input}"
     else 
      puts "Invalid input, please try again"
@@ -70,7 +72,7 @@ def exit_jukebox
 end 
 
 def run(songs)
-   
+
   go = true
   
   while go == true
@@ -93,6 +95,22 @@ def run(songs)
     end
   end
   
+
+  help 
+  puts "Please enter a command:"
+  input = gets.strip
+  if input == "help"
+    help
+  elsif input == "exit"
+    exit_jukebox
+  elsif input == "play"
+    play(songs)
+  elsif input == "list"
+    list(songs)
+  else
+    exit_jukebox
+  end
+
 end 
 
 
